@@ -4,6 +4,13 @@ This is my personal [Emacs](https://www.gnu.org/software/emacs/) distribution.
 
 ## Installation
 
+### Requirements
+
+* [Emacs](https://www.gnu.org/software/emacs/) (tested for Emacs 27.1 on Arch Linux with X11)
+* [Hack](https://github.com/source-foundry/Hack) font
+
+### Setup
+
 just move this directory into your `.emacs.d` directory
 
 ```sh
@@ -35,3 +42,6 @@ Some of them are:
 
 Do `M-x all-the-icons-install-fonts`. I'm still working on how to automate this
 
+## Contributing
+
+Contributions and issues are of course very welcome. But please be kind!
