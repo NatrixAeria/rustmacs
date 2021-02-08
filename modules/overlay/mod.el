@@ -1,5 +1,8 @@
 (load-theme 'kaolin-temple)
 
+;; enable mouse support on terminal
+(xterm-mouse-mode 1)
+
 ;; disable help page at startup
 (setq inhibit-startup-message t)
 
@@ -19,6 +22,15 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; font
-(add-to-list 'default-frame-alist '(font . "Hack-11" ))
+(add-to-list 'default-frame-alist '(font . "Hack-10" ))
 
-(load-file (concat (file-name-directory load-file-name) "startscreen.el"))
+;; mod.el directory
+(let ((dir (file-name-directory load-file-name)))
+  (load-file (concat dir "font-lock+.el"))
+  ;; ivy-posframe
+  (load-file (concat dir "posframe.el"))
+  ;; startscreen
+  (load-file (concat dir "startscreen.el"))
+  ;; ivy-posframe
+  (load-file (concat dir "treemacs.el"))
+  )

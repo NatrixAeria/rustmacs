@@ -53,3 +53,16 @@
 (use-package fuz
   :ensure t
   )
+
+(use-package all-the-icons :ensure t)
+(use-package treemacs :ensure t)
+(use-package treemacs-all-the-icons :ensure t)
+(use-package counsel :ensure t)
+(use-package ivy-posframe :ensure t)
+(use-package ivy-rich :ensure t)
+(use-package projectile :ensure t)
+;(use-package treemacs-projectile :after projectile :ensure t)
+(use-package which-key :ensure t)
+(use-package all-the-icons-ivy-rich
+  :ensure t
+  :init (all-the-icons-ivy-rich-mode 1))

@@ -35,3 +35,4 @@
 ;; MODULES - post package
 ;; ========================
 (load-module "overlay")
+(load-module "global-keys")

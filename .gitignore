@@ -3,3 +3,5 @@ auto-save-list/
 amx-items
 custom/*
 elpa/
+.cache/
+projectile-bookmarks.eld
