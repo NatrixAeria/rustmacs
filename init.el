@@ -36,3 +36,4 @@
 ;; ========================
 (load-module "overlay")
 (load-module "global-keys")
+(load-module "editor")
