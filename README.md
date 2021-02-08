@@ -2,7 +2,7 @@
 
 This is my personal [Emacs](https://www.gnu.org/software/emacs/) distribution. 
 
-# Installation
+## Installation
 
 just move this directory into your `.emacs.d` directory
 ```sh
@@ -10,9 +10,15 @@ git clone https://github.com/natrixaeria/rustmacs
 mv -uT rustmacs ~/.emacs.d
 ```
 
+## Screenshots
+
+Startscreen | M-x
+:-:|:-:
+![the dashboard](./screenshots/startscreen.png)  |  ![the m-x prompt](./screenshots/m-x.png)
+
 #TODO: *further steps?*
 
-## Better call this Frankenstein's monster
+## A better name would be Frankenstein's monster
 
 Much configuration is copied-pasted from other places.
 Some of them are:
