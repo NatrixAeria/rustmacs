@@ -5,3 +5,4 @@ custom/*
 elpa/
 .cache/
 projectile-bookmarks.eld
+network-security.data
