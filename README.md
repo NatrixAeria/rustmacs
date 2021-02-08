@@ -2,6 +2,13 @@
 
 This is my personal [Emacs](https://www.gnu.org/software/emacs/) distribution.
 
+The repo was mainly created for development with rust.
+The goal is to have a usable and beautiful user interface for power programmers.
+So I do the best to combine simplicity, design and productivity.
+
+But note that I am still inexperienced with emacs and this repo is yet in pretty much uncomplete.
+I (still) feel confident that this will change soon :)
+
 ## Installation
 
 ### Requirements
