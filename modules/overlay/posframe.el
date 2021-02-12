@@ -25,10 +25,7 @@
              :internal-border-color (face-attribute overlay/posframe-bg :background nil t)
              ;; see https://www.gnu.org/software/emacs/manual/html_node/elisp/Layout-Parameters.html#Layout-Parameters
              :override-parameters `((min-width . 70)
-                                    (min-height . ,ivy-height)
-                                    (border-color . "red")
-                                    (border-width . 100)
-                                    )
+                                    (min-height . ,ivy-height))
              (funcall ivy-posframe-size-function))
       (ivy-posframe--add-prompt 'ignore)))
   (with-current-buffer ivy-posframe-buffer

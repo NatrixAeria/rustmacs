@@ -4,15 +4,33 @@
 The window on which the start screen is displayed.
 This is needed to determine its width.")
 
+(defgroup startscreen nil
+  "Configure the screen shown at startup"
+  :group 'environment)
+
 (defcustom startscreen-title "< R U S T M A C S >" "\
 The title at the startscreen.
 It is displayed right beneath the logo."
-  :type 'stringp)
+  :type 'string
+  :group 'startscreen)
 
 (defcustom startscreen-sub-title "rust is better than you" "\
 The sub-title at the startscreen.
 It is displayed right beneath the title."
-  :type 'stringp)
+  :type 'string
+  :group 'startscreen)
+
+(defcustom startscreen-logo (concat user-emacs-directory "assets/logo.png") "\
+The path of the logo at the startscreen.
+It is displayed right above the title."
+  :type 'string
+  :group 'startscreen)
+
+;; TODO make this property unnecessary
+(defcustom startscreen-logo-width 400
+  "The width in pixels of the logo at the startscreen."
+  :type 'integer
+  :group 'startscreen)
 
 (defun startscreen/insert-text (text &optional size color)
   (let ((size (if size size 1.0)))
@@ -46,7 +64,7 @@ It is displayed right beneath the title."
   (remove-overlays)
   (erase-buffer)
   (turn-on-iimage-mode)
-  (startscreen/insert-image "~/.emacs.d/assets/logo.png" 400 10)
+  (startscreen/insert-image startscreen-logo startscreen-logo-width 10)
   (startscreen/insert-text startscreen-title 1.8 font-lock-warning-face)
   (startscreen/insert-text startscreen-sub-title 0.9 font-lock-warning-face)
   (insert "\n")
